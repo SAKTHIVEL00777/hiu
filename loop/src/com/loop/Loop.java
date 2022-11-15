@@ -4,7 +4,7 @@ public class Loop {
 	
 		public static void main(String args[]) {
 			
-			System.out.println("WHILE LOOP PROGRAMS");
+		//	System.out.println("WHILE LOOP PROGRAMS");
 			
 			Loop loop=new Loop();
 			
