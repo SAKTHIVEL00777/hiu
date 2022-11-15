@@ -5,7 +5,7 @@ public class LoopingTask {
 	public static void main(String[] args) {
 		LoopingTask task=new LoopingTask();
 		task.First_N_primeNo();
-		//System.out.println("-------------");
+		//System.out.println("--------------");
 		task.First_N_DoubleDigit();
 	}
 
