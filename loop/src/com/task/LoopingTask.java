@@ -29,7 +29,7 @@ public class LoopingTask {
 		//task.print12345();
 		//task.print1To15();
 		//task.multipleOf5();
-		task.multipleOf5singleLoop();
+		//task.multipleOf5singleLoop();
 		//task.factorial(10);
 		//task.binaryToOctal();
 		//task.fibonacii5to80();
