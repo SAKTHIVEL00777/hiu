@@ -10,12 +10,12 @@ public class PatternProgram {
 		//pap.pattern3();
 		//pap.pattern4();
 		//pap.pattern5();
-	    //pap.pattern6();
-	    //pap.pattern7();
-	    //pap.pattern8();
-	    //pap.pattern9();
-	    //pap.pattern10();
-	    //pap.pattern11();
+	        //pap.pattern6();
+	        //pap.pattern7();
+	        //pap.pattern8();
+	        //pap.pattern9();
+	        //pap.pattern10();
+	        //pap.pattern11();
 		//============================
 		//pap.pattern12();
 		//pap.pattern13();
