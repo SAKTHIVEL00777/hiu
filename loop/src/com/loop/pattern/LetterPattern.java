@@ -5,7 +5,7 @@ public class LetterPattern {
 	public static void main (String args[]) {
 		
 		LetterPattern lp=new LetterPattern();
-		lp.printS();  
+		//lp.printS();  
 	}
 
 	private void printS() {
