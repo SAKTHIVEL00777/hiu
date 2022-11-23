@@ -11,8 +11,27 @@ public class LetterPattern {
 		//lp.printT();
 		//lp.printH();
 		//lp.printI();
-		//$$$$$$$$$$$$$$$$$$$$$$$$$
-		lp.printC();
+		//$$$$$$$$$$$$$$$$$$$$$$$$
+		//lp.printC();
+		//lp.printD();
+	}
+
+	
+	private void printD() {
+			for(int col=1;col<=5;col++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+			for(int row=1;row<=5;row++) {
+				System.out.print("* ");
+				for(int col=1;col<=4;col++) {
+					System.out.print("  ");
+				}
+				System.out.println("*");
+			}
+			for(int col=1;col<=5;col++) {
+				System.out.print("* ");
+			}
 	}
 
 	private void printC() {
@@ -87,7 +106,7 @@ public class LetterPattern {
 			for(int row=1;row<=5;row++) {
 				System.out.print("*");
 				for(int space=1;space<=5;space++) {
-					if(row==1 && space==5 || row==2 && space==3 ||row==3 && space==2 ||row==4 && space==3||row==5 && space==5) {
+                if(row==1 && space==5 || row==2 && space==3 ||row==3 && space==2 ||row==4 && space==3||row==5 && space==5) {
 						System.out.print("* ");
 					}
 					else {
