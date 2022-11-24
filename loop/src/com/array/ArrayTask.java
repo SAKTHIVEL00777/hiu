@@ -1,0 +1,144 @@
+package com.array;
+
+import java.util.Scanner;
+
+public class ArrayTask {
+
+	public static void main(String[] args) {
+		ArrayTask at=new ArrayTask();
+		int[] ar= {10,20,30,50,70,90};
+		  //at.printArray(ar);
+		  //at.printIndex(ar);
+		  //at.reverseArray(ar);
+		  //at.linearSearch(ar,50);
+		  //at.liner(ar);
+		  //at.oddIndex(ar);
+		  //at.evenIndex(ar);
+		  //at.getMark();
+		  //at.getBiggest();
+		  //at.getSmallest();
+		  at.lowestMark();
+	}
+
+	private void lowestMark() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter No of Subject");
+		int sub=sc.nextInt();
+		int mark[]=new int[sub];
+		int low=Integer.MAX_VALUE;
+		for(int i=0;i<mark.length;i++) {
+			System.out.print("Enter Mark: ");
+			mark[i]=sc.nextInt();
+			if(mark[i]<low) {
+				low=mark[i];
+			}
+		}
+		System.out.println("Lowest Mark: "+low);
+	}
+
+	private void getSmallest() {
+	    	Scanner sc=new Scanner(System.in);
+			System.out.println("Enter No of Days");
+			int day=sc.nextInt();
+			int temp[]=new int[day];
+			int small=Integer.MAX_VALUE;
+			int big=Integer.MIN_VALUE;
+			for(int i=0;i<temp.length;i++) {
+				System.out.print("Enter temperature: ");
+				temp[i]=sc.nextInt();
+				if(temp[i]<small) {
+					small=temp[i];
+				}
+				if(temp[i]>big) {
+					big=temp[i];
+				}
+			}
+			System.out.println("Lowest temperature: "+small);
+			System.out.println("Highest temperature: "+big);
+	}
+
+	private void getBiggest() {
+		Scanner sc=new Scanner(System.in);			
+		System.out.println("Enter No of Subject");
+		int sub=sc.nextInt();
+		int mark[]=new int[sub];
+		int big=0;
+		for(int i=0;i<mark.length;i++) {
+			System.out.print("Enter mark: ");
+			mark[i]=sc.nextInt();
+			if(mark[i]>big) {
+				big=mark[i];
+			}
+		}
+		System.out.println("Highest mark: "+big);
+	}
+
+	private void getMark() {
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Enter No of Subject");
+			int sub=sc.nextInt();
+			int mark[]=new int[sub];
+			int total=0;
+			for(int i=0;i<mark.length;i++) {
+				System.out.print("Enter Mark: ");
+				mark[i]=sc.nextInt();
+				total=mark[i];
+			}
+			System.out.println("Total: "+total);
+			System.out.println("Average "+total/mark.length);
+	}
+
+	private void evenIndex(int[] ar) {
+			for(int i=0;i<ar.length;i+=2) {
+				System.out.print(ar[i]+" ");
+				System.out.println("index "+i);
+			}
+	}
+
+	private void oddIndex(int[] ar) {
+			for(int i=1;i<ar.length;i+=2) {
+				System.out.print(ar[i]+" ");
+				System.out.println("index "+i);
+			}
+	}
+
+	private void liner(int[] ar) {
+			int count=0;
+			int key=40;
+			for(int i=0;i<ar.length;i++) {
+				if(ar[i]==key) {
+					count++;
+				}
+			}
+			System.out.println(count);
+	}
+
+	private void linearSearch(int[] ar, int key) {
+			for(int i=0;i<ar.length;i++) {
+				if(ar[i]==key) {
+					System.out.println(key + "is present");
+					break;
+				}
+			}
+	}
+
+	private void reverseArray(int[] ar) {
+			for(int i=ar.length-1;i>=0;i--) {
+				System.out.print(ar[i]+" ");
+			}
+	}
+
+	private void printIndex(int[] ar) {
+			for(int i=0;i<ar.length;i++) {
+				System.out.print(i+" ");
+			}
+	}
+
+
+	private void printArray(int[] ar) {
+			for(int i=0;i<ar.length;i++) {
+				System.out.print(ar[i]+" ");
+			}
+	}
+
+}
