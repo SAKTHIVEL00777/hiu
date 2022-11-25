@@ -10,14 +10,62 @@ public class ArrayTask {
 		  //at.printArray(ar);
 		  //at.printIndex(ar);
 		  //at.reverseArray(ar);
-		  //at.linearSearch(ar,50);
+		  //at.linearSearch(50);
 		  //at.liner(ar);
 		  //at.oddIndex(ar);
 		  //at.evenIndex(ar);
 		  //at.getMark();
 		  //at.getBiggest();
 		  //at.getSmallest();
-		  at.lowestMark();
+		  //at.lowestMark();
+	      //at.secondBiggsetNo();
+	     //at.secondSmallestNo();
+		at.addOfOddIndex();
+	}
+ 
+	private void addOfOddIndex() {
+			int[] ar= {10,20,30,40,50,60};
+			int sum=0;
+			for(int i=0;i<ar.length;i++) {
+				if(i%2!=0) {
+					sum+=ar[i];
+				}
+			}
+			System.out.println(sum);
+	}
+
+	private void secondSmallestNo() {
+			int[] ar= {5,10,15,20};
+			int small1=Integer.MAX_VALUE;
+			int small2=Integer.MAX_VALUE;
+			for(int i=0;i<ar.length;i++) {
+				if(ar[i]<small1) {
+					small2=small1;
+					small1=ar[i];
+				}
+				else if(ar[i]<small2) {
+					small2=ar[i];
+				}
+			}
+			System.out.println("Smallest No Is: "+small1);
+			System.out.println("Smallest No Is: "+small2);
+	}
+
+	private void secondBiggsetNo() {
+			int[] ar= {15,12,14,18};
+			int big1=Integer.MIN_VALUE;
+			int big2=Integer.MIN_VALUE;
+			for(int i=0;i<ar.length;i++) {
+				if(ar[i]>big1) {
+					big2=big1;
+					big1=ar[i];
+				}
+				else if(ar[i]>big2) {
+					big2=ar[i];
+					}
+				}
+			System.out.println("Biggest No Is: "+big1);
+			System.out.println("Biggest No Is: "+big2);
 	}
 
 	private void lowestMark() {
@@ -82,10 +130,10 @@ public class ArrayTask {
 			for(int i=0;i<mark.length;i++) {
 				System.out.print("Enter Mark: ");
 				mark[i]=sc.nextInt();
-				total=mark[i];
+				total+=mark[i];
 			}
 			System.out.println("Total: "+total);
-			System.out.println("Average "+total/mark.length);
+			//System.out.println("Average "+total/mark.length);
 	}
 
 	private void evenIndex(int[] ar) {
@@ -104,19 +152,21 @@ public class ArrayTask {
 
 	private void liner(int[] ar) {
 			int count=0;
-			int key=40;
+			int key=30;
 			for(int i=0;i<ar.length;i++) {
 				if(ar[i]==key) {
 					count++;
 				}
 			}
 			System.out.println(count);
+	
 	}
 
-	private void linearSearch(int[] ar, int key) {
-			for(int i=0;i<ar.length;i++) {
+	private void linearSearch( int key) {
+			int ar[]= {10,20,30,50,70,90};
+	         for(int i=0;i<ar.length;i++) {
 				if(ar[i]==key) {
-					System.out.println(key + "is present");
+					System.out.println("Key Value: "+key);
 					break;
 				}
 			}
