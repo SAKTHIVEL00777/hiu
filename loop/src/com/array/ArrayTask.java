@@ -19,10 +19,85 @@ public class ArrayTask {
 		  //at.getSmallest();
 		  //at.lowestMark();
 	      //at.secondBiggsetNo();
-	     //at.secondSmallestNo();
-		at.addOfOddIndex();
+	      //at.secondSmallestNo();
+		  //at.addOfOddIndex();
+		  //at.copyArrayReverseOrder();
+		  //at.negativeNoArray();
+		  //at.countOfNegativeNo();
+		  //at.copyNegativeNoArray();
+		  //at.addTwoArray();
+		  at.addTwoArray_A();
 	}
- 
+	private void addTwoArray_A() {
+		int a[]= {10,20,30};
+		int b[]= {10,20,30,40,50,60,70};
+		int small=a.length<b.length?a.length:b.length;
+		int big=a.length>b.length?a.length:b.length;
+		int c[]=new int[big];
+		for(int i=0;i<small;i++) {
+			c[i]=a[i]+b[i];
+			System.out.print(c[i]+" ");
+		}
+		for(int i=0;i<c.length;i++) {
+			c[i]=b[i];
+			System.out.print(c[i]+" ");
+		}
+	}
+
+	private void addTwoArray() {
+			int a[]= {10,20,30};
+			int b[]= {15,30,35};
+			int c[]=new int[b.length];
+			for(int i=0;i<b.length;i++) {
+				c[i]=a[i]+b[i];
+				System.out.print(c[i]+" ");
+			}
+	}
+	private void copyNegativeNoArray() {
+		int ar[]= {10,20,-5,-15,-25,30};
+	    int neg[]=new int[ar.length];
+		int j=0;
+		for(int i=0;i<ar.length;i++) {
+			if(ar[i]<0) {
+				neg[j]=ar[i];
+				System.out.print(neg[j]+" ");
+				j++;
+			}
+		}
+
+	}
+	private void countOfNegativeNo() {
+		int ar[]= {10,20,-5,-15,-25,30};
+			int count=0;
+			for(int i=0;i<ar.length;i++) {
+				if(0>ar[i]) {
+					count++;
+				}
+			}
+			System.out.println("No Of Negative:"+count);
+			//return count;
+	}
+
+	private void negativeNoArray() {
+			int ar[]= {10,20,-5,-15,-25,30};
+			for(int i=0;i<ar.length;i++) {
+				if(0>ar[i]) {
+					System.out.print(ar[i]+" ");
+				}
+			}
+	}
+
+	private void copyArrayReverseOrder() {
+		int ar[]= {10,20,30,40,50};
+		int rev[]=new int[ar.length];
+		int j=ar.length-1;
+		for(int i=0;i<ar.length;i++) {
+			rev[i]=ar[j];
+			System.out.print(rev[i]+" ");
+			j--;
+		}	
+	}
+
 	private void addOfOddIndex() {
 			int[] ar= {10,20,30,40,50,60};
 			int sum=0;
