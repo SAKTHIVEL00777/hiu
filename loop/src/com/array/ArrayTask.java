@@ -26,7 +26,7 @@ public class ArrayTask {
 		  //at.countOfNegativeNo();
 		  //at.copyNegativeNoArray();
 		  //at.addTwoArray();
-		  at.addTwoArray_A();
+		  //at.addTwoArray_A();
 	}
 	private void addTwoArray_A() {
 		int a[]= {10,20,30};
