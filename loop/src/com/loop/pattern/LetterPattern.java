@@ -11,12 +11,30 @@ public class LetterPattern {
 		//lp.printT();
 		//lp.printH();
 		//lp.printI();
-		//$$$$$$$$$$$$$$$$$$$$$$$$
+		lp.myNameCalling();
+		//$$$$$$$$$$$$$$$$$$$$$$$
 		//lp.printC();
 		//lp.printD();
 	}
-
 	
+	private void myNameCalling() {
+		    printS();
+		    System.out.println();
+		    System.out.println();
+		    printA();
+		    System.out.println();
+		    System.out.println();
+		    printK();
+		    System.out.println();
+		    System.out.println();
+		    printT();
+		    System.out.println();
+		    System.out.println();
+		    printH();
+		    System.out.println();
+		    System.out.println();
+		    printI();
+	}
 	private void printD() {
 			for(int col=1;col<=5;col++) {
 				System.out.print("* ");
@@ -169,9 +187,9 @@ public class LetterPattern {
 				if(col==1) {
 					System.out.print(" ");
 				}
-				System.out.print("*  ");
+				System.out.print("* ");
 			}
-     }
+     	}
 	
 }
 
