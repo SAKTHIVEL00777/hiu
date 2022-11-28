@@ -27,6 +27,15 @@ public class ArrayTask {
 		  //at.copyNegativeNoArray();
 		  //at.addTwoArray();
 		  //at.addTwoArray_A();
+		  at.lastPlace();
+	}
+	private void lastPlace() {
+			int ar[]= {10,20,30,50};
+			int key=40;
+			ar[ar.length-1]=key;
+			for(int i=0;i<ar.length;i++) {
+				System.out.print(ar[i]+" ");
+			}
 	}
 	private void addTwoArray_A() {
 		int a[]= {10,20,30};
