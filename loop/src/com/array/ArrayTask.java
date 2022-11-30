@@ -29,7 +29,36 @@ public class ArrayTask {
 		  //at.addTwoArray_A();
 		  //at.lastPlace();
 		  //at.moveLeft(ar);
-		  at.twiceLeftMove();
+		  //at.twiceLeftMove();
+		  //at.moveRight(ar);
+		   at.twiceRightMove();
+	}
+	private void twiceRightMove() {
+		int ar[]= {10,20,30,47,55};
+		for(int shift=1;shift<=2;shift++) {   //twice move from right
+			int right[]=moveRight(ar);
+			for(int i=0;i<right.length;i++) {
+				System.out.print(right[i]+" ");
+			}
+		}
+	}
+	private int[] moveRight(int[] ar) {
+		      //int[] ar= {10,20,30,50,70,90};
+				System.out.println();
+				System.out.print("Before Move");
+				int temp=ar[ar.length-1];
+				for(int i=0;i<ar.length;i++) {
+					System.out.print(ar[i]+" ");
+				}
+				System.out.println();
+				System.out.print("After Move");
+				int i;
+				for(i=ar.length-1;i>=1;i--) {
+					ar[i]=ar[i-1];
+					
+				}
+				ar[i]=temp;
+				return ar;	
 	}
 	private void twiceLeftMove() {
 			int ar[]= {10,20,30,47,55};
