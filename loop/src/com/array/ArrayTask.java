@@ -31,7 +31,76 @@ public class ArrayTask {
 		  //at.moveLeft(ar);
 		  //at.twiceLeftMove();
 		  //at.moveRight(ar);
-		   at.twiceRightMove();
+		  //at.twiceRightMove();
+		  //at.removeValueInArray();
+		  //at.firstRepeatedElement();
+		  at.allRepeatedElement();
+	}
+	private void allRepeatedElement() {
+			int[] no= {10,20,30,10,50,20,10,30};
+			int[] repeatCount=new int[no.length];
+			for(int i=0;i<no.length;i++) {
+				int key=no[i];
+				int count=1;
+				for(int j=i+1;j<no.length;j++) {
+					if(key==no[j]) {
+						//System.out.println(no[j]);
+						repeatCount[j]=-1;
+						count++;
+					}
+				}
+				if(repeatCount[i] !=-1) {
+					repeatCount[i]=count;
+					
+				}
+			}
+			for(int i=0;i<repeatCount.length;i++) {
+				if(repeatCount[i]>1)
+					System.out.println(no[i]+" times "+repeatCount[i]+" repeate");
+			}
+	}
+	private void firstRepeatedElement() {
+			String st="kavinkumar";
+			boolean repeat=false;
+			char[] name=st.toCharArray();
+			for(int i=0;i<name.length-1;i++) {
+				char key=name[i];
+				for(int j=i+1;j<name.length;j++) {
+					if(key==name[j]) {
+						System.out.println(name[j]);
+						repeat=true;
+						break;
+					}
+				}
+				if(repeat==true) {
+					break;
+				}
+			}
+	}
+	private void removeValueInArray() {
+	      	int[] ar= {10,20,30,40,50,70,90};
+	      	System.out.println("Print Value ");
+	      	for(int i=0;i<ar.length;i++) {
+	      		System.out.print(ar[i]+" ");
+	      	}
+	      	System.out.println();
+	      	System.out.println("Remove Value");
+	      	int key=40;
+	      	int index=-1;
+	      	for(int i=0;i<ar.length;i++) {
+	      		if(ar[i]==key) {
+	      			index=i;
+	      			break;
+	      		}
+	      	}
+	      	for(int i=index;i<ar.length-1;i++) {
+	      		ar[i]=ar[i+1];
+	      	}
+	      	for(int i=0;i<ar.length;i++) {
+	      		System.out.print(ar[i]+" ");
+	      	}
+	      	
+
 	}
 	private void twiceRightMove() {
 		int ar[]= {10,20,30,47,55};
