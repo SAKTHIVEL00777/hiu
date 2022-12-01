@@ -36,7 +36,107 @@ public class ArrayTask {
 		  //at.firstRepeatedElement();
 		  //at.allRepeatedElement();
 		  //at.allRepeatedChracter();
-		  at.mostRepeatedCharacter();
+		  //at.mostRepeatedCharacter();
+		  //at.nonRepeatedElement();
+		  //at.findIndexAdd10();
+		  //at.findIndexMultiple20();
+		  //at.primeNo();
+		  //at.perfectNo();
+		  at.factorial(5);
+	}
+	private void factorial(int no) {    //int declare for 
+			int fact=1;
+			while(0<no) {
+				fact=fact*no;
+				no--;
+			}
+			System.out.println(fact);
+			//return count;
+	}
+	private void perfectNo() {
+			int ar[]= {6,7,45,28};
+			for(int i=0;i<ar.length;i++) {
+				int div=1;
+				int sum=0;
+				while(div<ar[i]) {
+					if(ar[i]%div==0) {
+						sum=sum+div;
+					}
+					div++;
+				}
+				if(ar[i]==sum) {
+					System.out.println(ar[i]+" is perfect no");
+				}
+				else {
+					System.out.println(ar[i]+" is not perfect no");
+				}
+			}
+	}
+	private void primeNo() {
+			int ar[]= {3,5,6,7,8,11,12,13};
+			for(int i=0;i<ar.length;i++) {
+				int div=2;
+				int count=0;
+				while(div<ar[i]) {
+					if(ar[i]%div==0) {
+						count++;
+					}
+					div++;
+					
+					if(count==0) {
+						System.out.println(ar[i]+" is prime no");
+					}
+					else {
+						System.out.println(ar[i]+" is not prime no");
+					}
+				}
+			}
+
+	}
+	private void findIndexMultiple20() {
+			int ar[]= {1,20,5,3,5,6,4};
+			for(int i=0;i<ar.length;i++) {
+				int key=ar[i];
+				for(int j=i+1;j<ar.length;j++) {
+					if(key*ar[j]==20) {
+						System.out.println(i+"  "+j);
+					}
+				}
+			}
+	}
+	private void findIndexAdd10() {
+			int ar[]= {0,10,5,3,5,6,7};
+			for(int i=0;i<ar.length;i++) {
+				int key=ar[i];
+				for(int j=i+1;j<ar.length;j++) {
+					if(key+ar[j]==10) {
+						System.out.println(i+"  "+j);
+					}
+				}
+			}
+	}
+	private void nonRepeatedElement() {
+		String st="sakthi";
+		char[] name=st.toCharArray();
+		int[]freq=new int[name.length];
+		for(int i=0;i<name.length;i++) {
+			char key=name[i];
+			int count=1;
+			for(int j=i+1;j<name.length;j++) {
+				if(key==name[j]) {
+					freq[j]=-1;
+					count++;
+				}
+			}
+			if(freq[i]!=-1) {
+				freq[i]=count;
+			}
+		}
+		for(int i=0;i<freq.length;i++) {
+			if(freq[i]==1) {
+				System.out.println(name[i]+" -is non repeated ");
+			}
+		}
 	}
 	private void mostRepeatedCharacter() {
 		String st="kavinkumar";
