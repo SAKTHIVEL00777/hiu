@@ -34,7 +34,60 @@ public class ArrayTask {
 		  //at.twiceRightMove();
 		  //at.removeValueInArray();
 		  //at.firstRepeatedElement();
-		  at.allRepeatedElement();
+		  //at.allRepeatedElement();
+		  //at.allRepeatedChracter();
+		  at.mostRepeatedCharacter();
+	}
+	private void mostRepeatedCharacter() {
+		String st="kavinkumar";
+		char[] name=st.toCharArray();
+		int[]freq=new int[name.length];
+		for(int i=0;i<name.length;i++) {
+			char key=name[i];
+			int count=1;
+			for(int j=i+1;j<name.length;j++) {
+				if(key==name[j]) {
+					freq[j]=-1;
+					count++;
+				}
+			}
+			if(freq[i]!=-1) {
+				freq[i]=count;
+			}
+		}
+		char highest=0;
+		int big=Integer.MIN_VALUE;
+		for(int i=0;i<freq.length;i++) {
+			if(freq[i]>big) {
+				big=freq[i];
+				highest=name[i];
+			}
+		}
+		System.out.println(highest+" is most repeated character"+big);
+	}
+	private void allRepeatedChracter() {
+			String st="kavinkumar";
+			char[] name=st.toCharArray();
+			int[]freq=new int[name.length];
+			for(int i=0;i<name.length;i++) {
+				char key=name[i];
+				int count=1;
+				for(int j=i+1;j<name.length;j++) {
+					if(key==name[j]) {
+						freq[j]=-1;
+						count++;
+					}
+				}
+				if(freq[i]!=-1) {
+					freq[i]=count;
+				}
+			}
+			for(int i=0;i<freq.length;i++) {
+				if(freq[i]>1) {
+					System.out.println(name[i]+" times "+freq[i]+" repeate");
+				}
+			}
+
 	}
 	private void allRepeatedElement() {
 			int[] no= {10,20,30,10,50,20,10,30};
