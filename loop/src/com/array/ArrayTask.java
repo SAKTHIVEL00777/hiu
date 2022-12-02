@@ -42,7 +42,90 @@ public class ArrayTask {
 		  //at.findIndexMultiple20();
 		  //at.primeNo();
 		  //at.perfectNo();
-		  at.factorial(5);
+		  //at.factorial(5);
+		  //at.printOddElementInEevenIndex();
+		  //at.printEvenElementInOddIndex();
+		  //at.splitOddAndEvenElement();
+		  //at.divideNoSameArray();
+		  at.printOnlyAdjacentValues();
+	}
+	private void printOnlyAdjacentValues() {
+		// TODO Auto-generated method stub
+		int[] ar = {16, 8, 15, 7,30}; 
+		//			0  1   2  3
+					//3<8
+		for(int j = 0; j<ar.length-1; j++)
+		{
+		int small = ar[j]<ar[j+1]?ar[j]: ar[j+1];
+		int big = ar[j]>ar[j+1]? ar[j]: ar[j+1]; 
+		for(int i= small; i<=big; i++)
+		System.out.print(i+" "); 
+		System.out.println();
+		}
+		}
+
+	private void divideNoSameArray() {
+			int ar[]= {30,12,35,40,9};
+			int div=0;
+			for(int i=0;i<ar.length;i++) {
+				if(ar[i]%3==0) {
+					div=ar[i]/3;
+					ar[i]=div;
+				}
+				System.out.print(ar[i]+" ");
+			}
+	}
+	private void splitOddAndEvenElement() {
+			int ar[]= {10,20,23,25,27,28,15,18};
+			int evenCount=0;
+			int oddCount=0;
+			for(int i=0;i<ar.length;i++) {
+				if(ar[i]%2==0) {
+					evenCount++;
+				}
+				else {
+					oddCount++;
+				}
+			}
+			int even[]=new int[evenCount];
+			int odd[]=new int[oddCount];
+			int j=0;
+			int k=0;
+			for(int i=0;i<ar.length;i++) {
+				if(ar[i]%2==0) {
+					even[j]=ar[i];
+					j++;
+				}
+				else {
+					odd[k]=ar[i];
+					k++;
+				}
+			}
+			System.out.print("even: ");
+			for(int i=0;i<even.length;i++) {
+				System.out.print(even[i]+" ");
+			}
+			System.out.println();
+			System.out.print("odd: ");
+			for(int i=0;i<odd.length;i++) {
+				System.out.print(odd[i]+" ");
+			}
+	}
+	private void printEvenElementInOddIndex() {
+			int ar[]= {10,20,40,10,13,15,16,18};
+			for(int i=0;i<ar.length;i++) {
+				if(i%2!=0 && ar[i]%2==0) {
+					System.out.print(ar[i]+" ");
+				}
+			}
+	}
+	private void printOddElementInEevenIndex() {
+			int ar[]= {9,11,17,13,14,16,5};
+			for(int i=0;i<ar.length;i++) {
+				if(i%2==0 && ar[i]%2!=0) {
+					System.out.print(ar[i]+" ");
+				}
+			}
 	}
 	private void factorial(int no) {    //int declare for 
 			int fact=1;
