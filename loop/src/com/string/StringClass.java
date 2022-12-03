@@ -12,7 +12,53 @@ public class StringClass {
 		  //sc.printSpecialChar("sehwag&*$@gmail.com");
 		  //sc.presentChar("sehwag");
 		  //sc.printReverse("SAKTHI");
-		  sc.palindrome("DAD");
+		  //sc.palindrome("DAD");
+		  //sc.repeatedElement("kavinkumar");
+		  sc.repeatedElement_A("kavinkumar");
+		  
+	}
+	private void repeatedElement_A(String name) {
+			int freq[]=new int[name.length()];
+				for(int i=0;i<name.length();i++) {
+					char key=name.charAt(i);
+					int count=1;
+					for(int j=i+1;j<name.length();j++) {
+						if(key==name.charAt(j)) {
+							freq[j]=-1;
+							count++;
+						}
+					}
+					if(freq[i]!=-1) {
+						freq[i]=count;
+					}
+				}
+				for(int i=0;i<freq.length;i++) {
+					if(freq[i]>1)
+						System.out.println(name.charAt(i)+" is "+freq[i]+" time repeated ");
+				}
+		}
+	
+	private void repeatedElement(String name) {
+			char[] ch=name.toCharArray();
+			int[] freq=new int[ch.length];
+			for(int i=0;i<ch.length;i++) {
+				char key=ch[i];
+				int count=1;
+				for(int j=i+1;j<ch.length;j++) {
+					if(key==ch[j]) {
+						freq[j]=-1;
+						count++;
+					}
+				}
+				if(freq[i]!=-1) {
+					freq[i]=count;
+				}
+			}
+			for(int i=0;i<freq.length;i++) {
+				if(freq[i]>1)
+					System.out.println(ch[i]+" is "+freq[i]+" time repeated");
+			}
+			
 	}
 
 	private void palindrome(String name) {
