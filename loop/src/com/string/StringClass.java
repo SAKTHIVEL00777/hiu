@@ -5,12 +5,34 @@ public class StringClass {
 	public static void main(String[] args) {
 		StringClass sc=new StringClass();
 		  //sc.stringMethods();
-		  //sc.countOfChar("virat");
-		  //sc.printNoOnly("virat18");
-		  //sc.printCharOnly("VIRAT");
-		  //sc.countOfVowels("virat");
-		  //sc.printSpecialChar("virat&*$@gmail.com");
-		  sc.presentChar("virat");
+		  //sc.countOfChar("sehwag");
+		  //sc.printNoOnly("sehwag00");
+		  //sc.printCharOnly("SEHWAG");
+		  //sc.countOfVowels("sehwag");
+		  //sc.printSpecialChar("sehwag&*$@gmail.com");
+		  //sc.presentChar("sehwag");
+		  //sc.printReverse("SAKTHI");
+		  sc.palindrome("DAD");
+	}
+
+	private void palindrome(String name) {
+			String rev="";
+			for(int i=name.length()-1;i>=0;i--) {
+				rev=rev+name.charAt(i);
+			}
+			if(name.equals(rev)) {
+				System.out.println(name +" is palindrome");
+			}
+			else {
+				System.out.println(name +" is not palindrome");
+			}
+			
+	}
+
+	private void printReverse(String name) {
+			for(int i=name.length()-1;i>=0;i--) {
+				System.out.print(name.charAt(i));
+			}
 	}
 
 	private void presentChar(String name) {
