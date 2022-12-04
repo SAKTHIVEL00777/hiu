@@ -14,8 +14,25 @@ public class StringClass {
 		  //sc.printReverse("SAKTHI");
 		  //sc.palindrome("DAD");
 		  //sc.repeatedElement("kavinkumar");
-		  sc.repeatedElement_A("kavinkumar");
-		  
+		  //sc.repeatedElement_A("kavinkumar");
+		  //sc.stringToChar("sakthi");
+		  //sc.stringToInteger("123");
+		  sc.charToString();
+	}
+	private void charToString() {
+			char[] ch= {'s','e','h','w','a','g'};
+			String str=new String(ch);
+			System.out.println(str);
+	}
+	private void stringToInteger(String str) {
+			int no=Integer.parseInt(str);
+			System.out.println(no);
+	}
+	private void stringToChar(String name) {
+			char[] ch=name.toCharArray();
+			for(int i=0;i<ch.length;i++) {
+				System.out.print(ch[i]);
+			}
 	}
 	private void repeatedElement_A(String name) {
 			int freq[]=new int[name.length()];
