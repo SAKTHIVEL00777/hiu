@@ -3,6 +3,8 @@ package com.file;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -20,8 +22,61 @@ public class FileIo {
 		//fi.listOfFolderOnly();
 		//fi.extension();
 		//fi.writeFile();
-		fi.bufferedwriter();
+		//fi.bufferedwriter();
+		//fi.readFile();
+		//fi.countSentence();
+		//fi.bufferedReader();
+		fi.subFolder();
+		
 	
+	}
+
+	private void subFolder() {
+		   File f=new File("/home/sakthivel/Music/NewFolder/SubFolder");
+		   f.mkdirs();
+	}
+
+	private void bufferedReader() throws IOException {
+		    File f=new File("/home/sakthivel/Music/newfile.txt");
+		    FileReader fr=new FileReader(f);
+		    BufferedReader br=new BufferedReader(fr);
+		    String r=br.readLine();
+		    System.out.println(r);
+
+	}
+
+	private void countSentence() throws IOException {
+		  File f=new File("/home/sakthivel/Music/newfile.txt");
+	        FileReader fr=new FileReader(f);
+	        int read=fr.read();
+	        int count=1;
+	        while(read!=-1) {
+	        	char ch=(char)read;
+	        	System.out.print(ch);//file reading
+	        	if(ch=='.') {
+	        		count++;
+	        	}
+	        	read=fr.read();
+	        }
+	        System.out.println(count);// count of sentence
+
+	}
+
+	private void readFile() throws IOException {
+	        File f=new File("/home/sakthivel/Music/newfile.txt");
+	        FileReader fr=new FileReader(f);
+	        int read=fr.read();
+	        int count=1;
+	        while(read!=-1) {
+	        	char ch=(char)read;
+	        	System.out.print(ch);//file reading
+	        	if(ch==' ') {
+	        		count++;
+	        	}
+	        	read=fr.read();
+	        }
+	        System.out.println(count);// count of word
+
 	}
 
 	private void bufferedwriter() throws IOException {
