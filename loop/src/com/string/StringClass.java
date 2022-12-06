@@ -20,7 +20,51 @@ public class StringClass {
 		  //sc.charToString();
 		  //sc.firstRepeatedElement("kavinkumar");
 		  //sc.firstNonRepeatedElement("vel");
-		  sc.lastRepeatedElement("kavinkumar");
+		  //sc.lastRepeatedElement("kavinkumar");
+		  //sc.countOfWords("hi i am sakthi from trichy");
+		  //sc.comapareString("sehwag","sachin");
+		  //sc.lowerToUpper("sakthi");
+		  //sc.upperToLower("SAKTHI");
+		  sc.firstUpper("sehwag");
+	}
+	private void firstUpper(String str) {
+			for(int i=0;i<str.length();i++) {
+				char ch=str.charAt(i);
+				if(i==0) {
+					ch=(char)(str.charAt(i)-32);
+				}
+				System.out.print(ch);
+			}
+	}
+	private void upperToLower(String str) {
+			for(int i=0;i<str.length();i++) {
+				 char ch=str.charAt(i);
+				 if(ch>'A' && ch<'Z') {
+					 System.out.print((char)(ch+32));
+				 }
+			}
+	}
+	private void lowerToUpper(String str) {
+			for(int i=0;i<str.length();i++) {
+				char ch=str.charAt(i);
+					if(ch>'a' && ch<'z') {
+						System.out.print((char)(ch-32));
+					}
+				}
+			}
+	
+	private void comapareString(String string, String string2) {
+		
+			System.out.println(string2.compareTo(string));
+	}
+	private void countOfWords(String str) {
+			int count=0;
+			for(int i=0;i<str.length();i++) {
+				if(str.charAt(i)==' ') {
+					count++;
+				}
+			}
+			System.out.println(count+1);
 	}
 	private void lastRepeatedElement(String str) {
 			char[] ch=str.toCharArray();
