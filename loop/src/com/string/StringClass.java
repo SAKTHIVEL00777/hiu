@@ -25,7 +25,16 @@ public class StringClass {
 		  //sc.comapareString("sehwag","sachin");
 		  //sc.lowerToUpper("sakthi");
 		  //sc.upperToLower("SAKTHI");
-		  sc.firstUpper("sehwag");
+		  //sc.firstUpper("sehwag");
+		  sc.findWord("i am sehwag");
+	}
+	private void findWord(String str) {
+			String[] name=new String[3];
+			for(int i=0;i<str.length();i++) {
+				if(str.charAt(i)==' ') {
+					name[i]=name[i]+str.charAt(i);
+				}
+			}
 	}
 	private void firstUpper(String str) {
 			for(int i=0;i<str.length();i++) {
