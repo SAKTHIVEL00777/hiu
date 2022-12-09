@@ -14,8 +14,8 @@ public class MobileNoFinding {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		MobileNoFinding mnc =new MobileNoFinding();
-		mnc.findMobileNo();
+		MobileNoFinding MNC =new MobileNoFinding();
+		MNC.findMobileNo();
 	}
 
 	private void findMobileNo() throws IOException {
