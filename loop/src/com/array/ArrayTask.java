@@ -43,12 +43,14 @@ public class ArrayTask {
 		  //at.primeNo();
 		  //at.perfectNo();
 		  //at.factorial(5);
+		    at.strongNo();
 		  //at.printOddElementInEevenIndex();
 		  //at.printEvenElementInOddIndex();
 		  //at.splitOddAndEvenElement();
 		  //at.divideNoSameArray();
-		  at.printOnlyAdjacentValues();
+		  //at.printOnlyAdjacentValues();
 	}
+	
 	private void printOnlyAdjacentValues() {
 		// TODO Auto-generated method stub
 		int[] ar = {16, 8, 15, 7,30}; 
@@ -127,14 +129,34 @@ public class ArrayTask {
 				}
 			}
 	}
-	private void factorial(int no) {    //int declare for 
+	
+	private void strongNo() {
+		// TODO Auto-generated method stub
+		int ar[]= {1,100,145,148,234};
+		for(int i=0;i<ar.length;i++) {
+			int temp=ar[i];
+			int sum=0;
+			while(0<ar[i]) {
+				int rem=ar[i]%10;
+				sum=sum+factorial(rem);
+				ar[i]=ar[i]/10;
+			}
+			if(sum==temp) {
+				System.out.println(temp+" is strong no");
+			}
+			else{
+				System.out.println(temp+" is not strong no");
+			}
+		}
+		}
+	private int factorial(int no) {    //int declare for 
 			int fact=1;
 			while(0<no) {
 				fact=fact*no;
 				no--;
 			}
-			System.out.println(fact);
-			//return count;
+			//System.out.println(fact);
+			return fact;
 	}
 	private void perfectNo() {
 			int ar[]= {6,7,45,28};
