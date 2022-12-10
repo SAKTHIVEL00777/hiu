@@ -43,12 +43,12 @@ public class ArrayTask {
 		  //at.primeNo();
 		  //at.perfectNo();
 		  //at.factorial(5);
-		    at.strongNo();
+		  //at.strongNo();
 		  //at.printOddElementInEevenIndex();
 		  //at.printEvenElementInOddIndex();
 		  //at.splitOddAndEvenElement();
 		  //at.divideNoSameArray();
-		  //at.printOnlyAdjacentValues();
+		  at.printOnlyAdjacentValues();
 	}
 	
 	private void printOnlyAdjacentValues() {
