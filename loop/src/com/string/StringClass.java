@@ -26,7 +26,7 @@ public class StringClass {
 		  //sc.lowerToUpper("sakthi");
 		  //sc.upperToLower("SAKTHI");
 		  //sc.firstUpper("sehwag");
-		  sc.findWord("i am sehwag");
+		  //sc.findWord("i am sehwag");
 	}
 	private void findWord(String str) {
 			String[] name=new String[3];
