@@ -1,11 +1,10 @@
-package com.task;
+package com.task.looping;
 
 public class LoopingTask {
 
 	public static void main(String[] args) {
 		LoopingTask task=new LoopingTask();
 		//task.First_N_primeNo();
-		//System.out.println("--------------");
 		//task.First_N_DoubleDigit();
 		//task.divisorOf100(100);
 		//task.primeOrNot(13);
@@ -38,7 +37,7 @@ public class LoopingTask {
 		//task.smallestDivisor();
 		//task.greatestAndsmallDivisor();
 		//task.palindrome(1221);
-		//task.print_101010();
+		task.print_101010();
 	}
 
 	private void print_101010() {
