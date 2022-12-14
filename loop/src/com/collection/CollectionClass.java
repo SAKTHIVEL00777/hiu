@@ -1,7 +1,10 @@
 package com.collection;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -23,7 +26,40 @@ public class CollectionClass {
         //cc.removeDuplicate();
         //cc.printDuplicate();
         //cc.yesOrNo();
-        cc.printIntegerOnly();
+        //cc.printIntegerOnly();
+		//cc.objectAdd();
+		//cc.iterate();
+	}
+     private void iterate() {
+		// TODO Auto-generated method stub
+    	 ArrayList<Integer> al=new ArrayList<Integer>();
+    	 al.add(10);
+    	 al.add(15);
+    	 al.add(8);
+    	 al.add(25);
+    	 al.add(18);
+    	 Iterator<Integer> it=al.iterator();
+    	 while(it.hasNext()) {
+    		 Integer i=it.next();
+    		 if(i%5==0) {
+    			 System.out.println(i);
+    		 }
+    	 }
+
+		
+	}
+	 Mobile m1=new Mobile("oneplus",35000,128,6);
+     Mobile m2=new Mobile("poco",20000,64,4);
+     Mobile m3=new Mobile("oneplus",35000,128,6);
+	private void objectAdd() {
+		// TODO Auto-generated method stub
+		ArrayList<Mobile> al=new ArrayList<Mobile>();
+		al.add(m1);
+		al.add(m2);
+		al.add(m3);
+		System.out.println(al);
+		Collections.sort(al);
+		System.out.println(al);
 		
 	}
 
