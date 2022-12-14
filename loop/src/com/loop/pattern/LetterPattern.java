@@ -11,30 +11,12 @@ public class LetterPattern {
 		//lp.printT();
 		//lp.printH();
 		//lp.printI();
-		lp.myNameCalling();
+		//lp.myNameCalling();
 		//$$$$$$$$$$$$$$$$$$$$$$$
 		//lp.printC();
 		//lp.printD();
 	}
-	
-	private void myNameCalling() {
-		    printS();
-		    System.out.println();
-		    System.out.println();
-		    printA();
-		    System.out.println();
-		    System.out.println();
-		    printK();
-		    System.out.println();
-		    System.out.println();
-		    printT();
-		    System.out.println();
-		    System.out.println();
-		    printH();
-		    System.out.println();
-		    System.out.println();
-		    printI();
-	}
+
 	private void printD() {
 			for(int col=1;col<=5;col++) {
 				System.out.print("* ");
@@ -70,7 +52,25 @@ public class LetterPattern {
 				System.out.print("* ");
 			}
 	}
-
+	
+	private void myNameCalling() {
+		    printS();
+		    System.out.println();
+		    System.out.println();
+		    printA();
+		    System.out.println();
+		    System.out.println();
+		    printK();
+		    System.out.println();
+		    System.out.println();
+		    printT();
+		    System.out.println();
+		    System.out.println();
+		    printH();
+		    System.out.println();
+		    System.out.println();
+		    printI();
+	}
 	private void printI() {
 			for(int col=1;col<=5;col++) {
 				if(col==1) {
