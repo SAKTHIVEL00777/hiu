@@ -1,7 +1,7 @@
 package com.demo;
 
 public interface InterDemo {
-	 String ADDRESS="trichy"; // by default static and final
+	 String ADDRESS="Trichy"; // by default static and final
 	void add();  	//by default abstract method
 	void multiple();
 	
