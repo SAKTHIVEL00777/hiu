@@ -6,4 +6,5 @@
  *
  */
 module demo2 {
+	//
 }
