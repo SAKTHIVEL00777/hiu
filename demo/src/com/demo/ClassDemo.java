@@ -5,13 +5,12 @@ public class ClassDemo implements InterDemo{
 	ClassDemo(){
 		System.out.println("ClassDemo Constructor");
 	}
-	/*
-	 * ClassDemo(int a){
-	 * 
-	 * }
-	 */
-
-	public static void main(String[] args) {
+	
+	  ClassDemo(int a){
+	  
+	  }
+	  
+	 public static void main(String[] args) {
 		InterDemo cd=new ClassDemo();
 		cd.add();
 		cd.multiple();
