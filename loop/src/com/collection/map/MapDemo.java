@@ -14,7 +14,7 @@ public class MapDemo {
 		//md.eachValueAdd5();
 		//md.frequency();
 		//md.highestRepeatedChar();
-		//md.gentricsDemo();
+		///md.gentricsDemo();
 
 	}
 
