@@ -6,10 +6,11 @@ public class ClassDemo implements InterDemo{
 		System.out.println("ClassDemo Constructor");
 	}
 	
-	  ClassDemo(int a){
-	  
-	  }
-	  
+	/*
+	 * ClassDemo(int a){
+	 * 
+	 * }
+	 */
 	 public static void main(String[] args) {
 		InterDemo cd=new ClassDemo();
 		cd.add();
