@@ -28,7 +28,7 @@ public class CollectionClass {
         //cc.yesOrNo();
         //cc.printIntegerOnly();
 		//cc.objectAdd();
-		//cc.iterate();
+		cc.iterate();
 	}
      private void iterate() {
 		// TODO Auto-generated method stub
