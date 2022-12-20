@@ -7,15 +7,15 @@ public class Mobile implements Comparable{
 	int rom;
 	int ram;
 	public Mobile(String name, int price, int rom, int ram) {
-		//super();
+		///super();
 		this.name = name;
 		this.price = price;
 		this.rom = rom;
 		this.ram = ram;
 	}
 	public String toString() {
+		
 		return this.name+" "+this.price+" "+this.rom+" "+this.ram;
-	//	return "name=" + name + ",price=" + price + ", rom=" + rom + ",ram=" + ram + "------ ";
 	}
 	@Override
 	public int compareTo(Object ob) {
