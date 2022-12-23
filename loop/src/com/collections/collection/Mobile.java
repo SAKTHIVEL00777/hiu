@@ -1,4 +1,4 @@
-package com.collection;
+package com.collections.collection;
 
 public class Mobile implements Comparable{
 
