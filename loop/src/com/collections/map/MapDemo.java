@@ -1,4 +1,4 @@
-package com.collection.map;
+package com.collections.map;
 
 import java.util.HashMap;
 import java.util.Map.Entry;
@@ -14,7 +14,7 @@ public class MapDemo {
 		//md.eachValueAdd5();
 		//md.frequency();
 		//md.highestRepeatedChar();
-		//md.gentricsDemo();
+		md.gentricsDemo();
 
 	}
 
