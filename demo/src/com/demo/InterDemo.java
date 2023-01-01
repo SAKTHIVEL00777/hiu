@@ -1,8 +1,8 @@
 package com.demo;
 
 public interface InterDemo {
-	 String ADDRESS="TRICHY"; ///// by default static and final
-	void add();  	/////by default abstract method
+	 String ADDRESS="TRICHY"; //by default static and final
+	void add();  	//by default abstract method
 	void multiple();
 	
 	default void show() {
