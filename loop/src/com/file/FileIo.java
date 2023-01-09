@@ -26,7 +26,7 @@ public class FileIo {
 		//fi.readFile();
 		//fi.countSentence();
 		//fi.bufferedReader();
-		//fi.subFolder();
+		fi.subFolder();
 		
 	
 	}
