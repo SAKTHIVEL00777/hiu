@@ -12,7 +12,7 @@ public class LetterPattern {
 		//lp.printH();
 		//lp.printI();
 		//lp.myNameCalling();
-		//$$$$$$$$$$$$$$$$$$$$$$$
+		//$$$$$$$$$$$$$$$$$$$$$$$$$
 		//lp.printC();
 		//lp.printD();
 	}
