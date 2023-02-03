@@ -9,7 +9,7 @@ public interface InterDemo {
 		System.out.println("INTERFACE SHOW");
 	}
 	static void subtract() {
-		System.out.println(20-10);
+		System.out.println(50-20);
 	}
 
 }
