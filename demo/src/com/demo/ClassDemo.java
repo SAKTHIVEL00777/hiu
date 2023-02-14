@@ -35,6 +35,6 @@ public class ClassDemo implements InterDemo{
 		
 	}
 	public void show() {
-		System.out.println("class show");
+		System.out.println("CLASS SHOW");
 	}
 }
