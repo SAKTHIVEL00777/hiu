@@ -25,7 +25,7 @@ public class ClassDemo implements InterDemo{
 	@Override
 	public void add() {
 		// TODO Auto-generated method stub
-		System.out.println(10+20);
+		System.out.println(30+20);
 	}
 
 	@Override
