@@ -16,7 +16,7 @@ public class ClassDemo implements InterDemo{
 		InterDemo cd=new ClassDemo();
 		cd.add();
 		cd.multiple();
-	///	cd.show();    can not call 
+	//	cd.show();    can not call 
 		System.out.println(cd.ADDRESS);
 		cd.show();
 		InterDemo.subtract();
