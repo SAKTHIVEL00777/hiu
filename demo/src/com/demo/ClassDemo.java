@@ -27,13 +27,13 @@ public class ClassDemo implements InterDemo{
 
 	@Override
 	public void add() {
-		/// TODO Auto-generated method stub
+		// TODO Auto-generated method stub
 		System.out.println(30+20);
 	}
 
 	@Override
 	public void multiple() {
-		/// TODO Auto-generated method stub
+		// TODO Auto-generated method stub
 		System.out.println(30*20);
 		
 	}
