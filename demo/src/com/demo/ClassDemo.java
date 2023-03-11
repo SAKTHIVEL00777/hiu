@@ -9,9 +9,11 @@ public class ClassDemo implements InterDemo{
 	
 
 	
-	  ClassDemo(int a){
-	  
-	  }
+	/*
+	 * ClassDemo(int a){
+	 * 
+	 * }
+	 */
 	 
 	
 	 public static void main(String[] args) {
