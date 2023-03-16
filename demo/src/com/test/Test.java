@@ -15,9 +15,11 @@ public class Test {
 		// TODO Auto-generated method stub
 		int a=25;
 		String name="DHONI";
+		Float f=15f;
 		
 		System.out.println(a);
 		System.out.println(name);
+		System.out.println(f);
 		System.out.println(aa);
 		System.out.println(city);
 		
