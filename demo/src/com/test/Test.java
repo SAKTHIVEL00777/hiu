@@ -16,10 +16,12 @@ public class Test {
 		int a=25;
 		String name="DHONI";
 		Float f=15f;
+		double d=102d;
 		
 		System.out.println(a);
 		System.out.println(name);
 		System.out.println(f);
+		System.out.println(d);
 		System.out.println(aa);
 		System.out.println(city);
 		
