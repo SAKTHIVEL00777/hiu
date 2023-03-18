@@ -17,11 +17,13 @@ public class Test {
 		String name="DHONI";
 		Float f=15f;
 		double d=102d;
+		long ll=907547821;
 		
 		System.out.println(a);
 		System.out.println(name);
 		System.out.println(f);
 		System.out.println(d);
+		System.out.println(ll);
 		System.out.println(aa);
 		System.out.println(city);
 		
