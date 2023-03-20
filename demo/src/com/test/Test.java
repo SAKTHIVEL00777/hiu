@@ -19,6 +19,7 @@ public class Test {
 		double d=102d;
 		long ll=907547821;
 		char let='C';
+		Boolean boo=true;
 		
 		
 		System.out.println(a);
@@ -27,7 +28,7 @@ public class Test {
 		System.out.println(d);
 		System.out.println(ll);
 		System.out.println(let);
-      
+        System.out.println(boo);
 		System.out.println(aa);
 		System.out.println(city);
 		
