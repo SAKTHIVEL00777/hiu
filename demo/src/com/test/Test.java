@@ -20,6 +20,7 @@ public class Test {
 		long ll=907547821;
 		char let='C';
 		Boolean boo=true;
+		final int my=20;
 		
 		
 		System.out.println(a);
@@ -29,6 +30,7 @@ public class Test {
 		System.out.println(ll);
 		System.out.println(let);
         System.out.println(boo);
+        System.out.println(my);
 		System.out.println(aa);
 		System.out.println(city);
 		
