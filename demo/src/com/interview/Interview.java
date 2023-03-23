@@ -6,8 +6,19 @@ public class Interview {
 		// TODO Auto-generated method stub
 
 		Interview in=new Interview();
-		in.reverse();
+		//in.reverse();
+		in.swappingNo();
 		
+	}
+
+	private void swappingNo() {
+		// TODO Auto-generated method stub
+		int no1=21;
+		int no2=33;
+		no1=no1+no2;
+		no2=no1-no2;
+		no1=no1-no2;
+		System.out.println(no1+"     "+no2);	
 	}
 
 	private void reverse() {
