@@ -5,11 +5,11 @@ public class InterviewTask {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		InterviewTask it=new InterviewTask();
-		it.merageArray();
+		//it.merageArray();
+		int[] c= {1, 3, 3, 5, 2, 4, 6, 6}; 
+    	it.ascending(c);
 
-	}
-
-	
+  }
 
 	private void merageArray() {
 		// TODO Auto-generated method stub
@@ -30,7 +30,32 @@ public class InterviewTask {
         for(int i=0;i<c.length;i++) {
         	System.out.print(c[i]+" ");
         }
-        
 	}
 
-}
+	private void ascending(int[] c) {
+		// TODO Auto-generated method stub
+		System.out.println("before array");
+		for(int i=0;i<c.length;i++) {
+			System.out.print(c[i]+" ");
+		}
+		int temp=0;
+		
+		for(int i=0;i<c.length;i++) {
+			for(int j=1;j<c.length;j++) {
+			if(c[j-1]>c[j]) {
+				temp=c[j-1];
+				c[j-1]=c[j];
+				c[j]=temp;
+			}
+		}
+		}
+		System.out.print("After array");
+		for(int i=0;i<c.length;i++) {
+			System.out.print(c[i]+" ");
+		}
+				
+		}
+		
+	}
+
+
