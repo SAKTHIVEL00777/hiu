@@ -8,7 +8,7 @@ public class InterviewTask {
 		//it.merageArray();
 		int[] c= {1, 3, 3, 5, 2, 4, 6, 6};
     	//it.ascending(c);
-    	it.decsending(c);
+    	//it.decsending(c);
     	
 
   }
