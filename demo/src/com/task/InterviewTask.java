@@ -9,9 +9,24 @@ public class InterviewTask {
 		int[] c= {1, 3, 3, 5, 2, 4, 6, 6};
     	//it.ascending(c);
     	//it.decsending(c);
-    	
-
+		it.duplicate(c);
+	
   }
+	private void duplicate(int[] c) {
+		// TODO Auto-generated method stub
+		int dup=0;
+		for(int i=0;i<c.length;i++) {
+			for(int k=i+1;i<c.length;i++) {
+				if(c[i]==c[k]) {
+					dup++;
+					System.out.println(dup);
+
+				}
+			
+			}
+		}
+		
+	}
 
 
 	private void decsending(int[] c) {
