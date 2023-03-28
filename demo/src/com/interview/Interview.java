@@ -7,7 +7,17 @@ public class Interview {
 
 		Interview in=new Interview();
 		//in.reverse();
-		in.swappingNo();
+		//in.swappingNo();
+		in.vowels("kavinkumar");
+		
+	}
+	
+	private void vowels(String str) {
+		// TODO Auto-generated method stub
+		for(int i=0;i<str.length();i++) {
+			if(str.charAt(i)=='a'|| str.charAt(i)=='e'|| str.charAt(i)=='i'|| str.charAt(i)=='o'|| str.charAt(i)=='u')
+				System.out.print(str.charAt(i)+" ");
+		}
 		
 	}
 
