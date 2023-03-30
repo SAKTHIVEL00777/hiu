@@ -9,9 +9,26 @@ public class Interview {
 		//in.reverse();
 		//in.swappingNo();
 		//in.vowels("kavinkumar");
-		in.primeNo();
+		//in.primeNo();
+		in.fibonacci(25);
 		
 	}
+	
+	private void fibonacci(int no) {
+		// TODO Auto-generated method stub
+		int first=0;
+		int second=1;
+		int third=0;
+		while(first<no) {
+			third=first+second;
+			first=second;
+			second=third;
+			System.out.println(first+ " ");
+		}
+		
+	}
+	
+	
 	private void primeNo() {
 		// TODO Auto-generated method stub
 		int no=17;
