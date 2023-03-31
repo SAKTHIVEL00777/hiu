@@ -10,9 +10,27 @@ public class Interview {
 		//in.swappingNo();
 		//in.vowels("kavinkumar");
 		//in.primeNo();
-		in.fibonacci(25);
+		//in.fibonacci(25);
+		in.palindrome("DAD");
 		
 	}
+	
+	private void palindrome(String str) {
+		// TODO Auto-generated method stub
+		String name="";
+		for(int i=str.length()-1;i>=0;i--) {
+			name=name+str.charAt(i);
+			
+		}
+		if(str.equals(name)) {
+			System.out.println("palindrome");
+		}
+		else {
+			System.out.println("not palindrome");
+		}
+		
+	}
+
 	
 	private void fibonacci(int no) {
 		// TODO Auto-generated method stub
