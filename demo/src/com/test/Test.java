@@ -7,8 +7,41 @@ public class Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
              Test t=new Test();
-             t.variable();
+             //t.variable();
+             //t.reverse();
+             //t.allFactorials();
+             t.factorial(5);
             
+	}
+
+	private void factorial(int no) {
+		// TODO Auto-generated method stub
+		int count=1;
+		while(no>0) {
+			count=count*no;
+			no=no-1;
+		}
+		System.out.println(count);
+		
+	}
+
+	private void allFactorials() {
+		// TODO Auto-generated method stub
+		int fact=5;
+		while(0<fact) {
+			System.out.println(fact);
+			fact=fact-1;
+		}
+		
+	}
+
+	private void reverse() {
+		// TODO Auto-generated method stub
+		String name="dhoni";
+		for(int i=name.length()-1;i>=0;i--) {
+			System.out.print(name.charAt(i));
+		}
+		
 	}
 
 	private void variable() {
