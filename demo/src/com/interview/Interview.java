@@ -11,10 +11,26 @@ public class Interview {
 		//in.vowels("kavinkumar");
 		//in.primeNo();
 		//in.fibonacci(25);
-		in.palindrome("DAD");
+		//in.palindrome("DAD");
+		in.factorial();
+		
 		
 	}
-	
+
+
+	private void factorial() {
+		// TODO Auto-generated method stub
+		int fact=5;
+		int count=1;
+		while(fact>0) {
+			count=count*fact;
+			fact=fact-1;
+		}
+		System.out.println(count);
+		
+		
+	}
+
 	private void palindrome(String str) {
 		// TODO Auto-generated method stub
 		String name="";
