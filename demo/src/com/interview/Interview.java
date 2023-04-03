@@ -12,11 +12,21 @@ public class Interview {
 		//in.primeNo();
 		//in.fibonacci(25);
 		//in.palindrome("DAD");
-		in.factorial();
+		//in.factorial();
+		in.allFactorials();
 		
 		
 	}
-
+	
+	private void allFactorials() {
+		// TODO Auto-generated method stub
+		int fact=5;
+		while(fact>0) {
+			System.out.print(fact+" ");
+			fact=fact-1;
+		}
+		
+	}
 
 	private void factorial() {
 		// TODO Auto-generated method stub
@@ -26,8 +36,7 @@ public class Interview {
 			count=count*fact;
 			fact=fact-1;
 		}
-		System.out.println(count);
-		
+		System.out.println(count);		
 		
 	}
 
