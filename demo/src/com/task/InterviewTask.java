@@ -9,11 +9,31 @@ public class InterviewTask {
 		int[] c= {1, 3, 3, 5, 2, 4, 6, 6};
     	//it.ascending(c);
     	//it.decsending(c);
-		it.duplicate(c);
-		
+		//it.duplicate(c);
+		it.binaryORNot();
+	
 	
   }
 	
+	private void binaryORNot() {
+		// TODO Auto-generated method stub
+		int a=1010;
+		boolean check=true;
+		while(a>0) {
+			if(a%10>1) {
+				check=false;
+			}
+			a=a/10;
+		}
+		if(check) {
+			System.out.println("BINARY NO");
+		}
+		else {
+			System.out.println("NOT BINARY NO");
+
+		}
+		
+	}
 	private void duplicate(int[] c) {
 		// TODO Auto-generated method stub
 		//int dup=0;
