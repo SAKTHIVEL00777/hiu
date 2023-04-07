@@ -13,7 +13,7 @@ public class Interview {
 		//in.fibonacci(25);
 		//in.palindrome("DAD");
 		//in.factorial();
-		in.allFactorials();
+		//in.allFactorials();
 		
 		
 	}
