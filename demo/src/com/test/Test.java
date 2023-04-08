@@ -10,8 +10,25 @@ public class Test {
              //t.variable();
              //t.reverse();
              //t.allFactorials();
-             t.factorial(5);
+             //t.factorial(5);
+             t.palindrome("AMMA");
             
+	}
+
+	private void palindrome(String str) {
+		// TODO Auto-generated method stub
+		String name="";
+		for(int i=str.length()-1;i>=0;i--) {
+			name=name+str.charAt(i);
+		}
+		if(str.equals(name)) {
+			System.out.println("PALINDROME");
+		}
+		else {
+			System.out.println("NOT PALINDROME");
+
+		}
+		
 	}
 
 	private void factorial(int no) {
