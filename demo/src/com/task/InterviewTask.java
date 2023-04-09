@@ -11,11 +11,29 @@ public class InterviewTask {
     	//it.decsending(c);
 		//it.duplicate(c);
 		//it.binaryORNot();
-		it.palindrome("ABCBA");
-		
+		//it.palindrome("ABCBA");
+		//it.factorial(5);
+		it.allFactorial();
 	
   }
-
+	private void allFactorial() {
+		// TODO Auto-generated method stub
+		int a=5;
+		while(a>0) {
+			System.out.print(a+" ");
+			a=a-1;
+		}
+		
+	}
+	private void factorial(int i) {
+		// TODO Auto-generated method stub
+		int count=1;
+		while(0<i) {
+			count=count*i;
+			i=i-1;
+		}
+		System.out.println(count);
+	}
 	private void palindrome(String str) {
 		// TODO Auto-generated method stub
 		String name="";
